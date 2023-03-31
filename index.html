@@ -1,53 +1,77 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Carrusel de Imágenes con Bootstrap</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
-	<style>
-		.carousel-item img {
-			max-height: 500px;
-			object-fit: cover;
-		}
-        .container {
+<html lang="en">
 
-        }
-	</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda a un peludo</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-	<div class="container col-md- 4">
-		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-			<!-- Indicadores del Carrusel -->
-			<ol class="carousel-indicators">
-				<li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-				<li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-				<li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-			</ol>
-			<!-- Slides del Carrusel -->
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="https://picsum.photos/id/1/800/500" alt="Imagen 1">
-				</div>
-				<div class="carousel-item">
-					<img src="https://picsum.photos/id/2/800/500" alt="Imagen 2">
-				</div>
-				<div class="carousel-item">
-					<img src="https://picsum.photos/id/3/800/500" alt="Imagen 3">
-				</div>
-			</div>
-			<!-- Controles del Carrusel -->
-			<a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Anterior</span>
-			</a>
-			<a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Siguiente</span>
-			</a>
-		</div>
-	</div>
+    <div class="container">
+        <!--Navegacion-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+                        <a class="nav-link" href="#">Adopta</a>
+                        <a class="nav-link" href="#">Colabora</a>
+                        <a class="nav-link active" href="#">Servicios</a>
+                        <a class="nav-link active" href="#">Contactanos</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <h1>Adopta</h1>
+            <h2>Salva una vida.</h2>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+
+            </div>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        
+                        <img src="img/eliot.jpeg" class="d-block w-100" alt="perro1"
+                            style="height: 500px; width: 150px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/leon.jpeg" class="d-block w-100" alt="perro2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Luna.jpg" class="d-block w-100" alt="perro3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+
 </html>
