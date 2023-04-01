@@ -1,10 +1,4 @@
-.col-md-8{
-    background-color: antiquewhite;
+.col-md-3{
+    border-bottom: 1px solid black;
     
 }
-
-.col-md-1{
-    border-bottom: 1px solid black;
-    border-style: 300%;
-}
- 
